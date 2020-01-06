@@ -34,4 +34,20 @@ class Owner
 
   def buy_cat
   end
+
+  def buy_dog
+  end
+
+  def walk_dogs
+  end
+
+  def feed_cats
+  end
+
+  def sell_pets
+  end
+
+  def list_pets
+    cats, dogs
+  end
 end
