@@ -6,6 +6,7 @@ class Cat
   def initialize (name, owner)
     @name = name
     @owner = Owner.all.select {|person| person.name == owner}[0]
+    puts @owner
     @mood = "nervous"
   end
 
