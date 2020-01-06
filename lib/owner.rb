@@ -23,4 +23,15 @@ class Owner
   def self.reset_all
     @@all.clear
   end
+
+  def cats
+    Cats.all.select {|cat| cat.owner == self}
+  end
+
+  def dogs
+    Dogs.all.select {|dog| dog.owner == self}
+  end
+
+  def buy_cat
+  end
 end
